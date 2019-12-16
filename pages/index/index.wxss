@@ -1,0 +1,28 @@
+.container,page{
+    height: 100%;
+    background:#B3D4DB ;
+}
+
+.logo{
+    width:200rpx;
+    height: 200rpx;
+    margin-top: 50rpx;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.btn{
+    margin-bottom: 150rpx;
+    background: #B3D4DB;
+    color:rgb(63, 108, 129);
+    width:250rpx;
+    height: 80rpx;
+    font-size: 24rpx;
+    border:1px solid rgb(63, 108, 129);
+    border-radius: 15rpx;
+    text-align: center;
+    line-height: 80rpx;
+}

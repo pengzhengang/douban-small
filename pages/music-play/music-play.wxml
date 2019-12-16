@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="moveCircle">
+        <image class="bg  {{isPlay?'running':'paused'}}" src="{{poster}}" mode="aspectFit|aspectFill|widthFix"
+            lazy-load="{{ture}}">
+        </image>
+    </view>
+    <image src="/images/icons/play-item.png" class="play-item {{isPlay?'play':'unplay'}}"></image>
+    <text class="name">{{name}}</text>
+    <image class="music " bind:tap="handleClick" src="{{isPlay?'/images/icons/play.png':'/images/icons/pause.png'}}"
+        mode="aspectFit|aspectFill|widthFix">
+
+    </image>
+    <image src="{{poster}}" class="background_img"></image>
+    <view class="bg-blur"></view>
+</view>
+

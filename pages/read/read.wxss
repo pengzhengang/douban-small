@@ -1,0 +1,8 @@
+/* pages/read/read.wxss */
+swiper{
+    height: 500rpx;
+}
+swiper swiper-item image{
+    width:750rpx;
+    height: 500rpx;
+}

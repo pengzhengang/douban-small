@@ -1,0 +1,118 @@
+.bg{
+    width:100%;
+    height:400rpx;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.blur{
+    position: absolute;
+    width:100%;
+    height:400rpx;
+    background: rgba(94, 93, 93, 0.1);
+    left:0;
+    top:0;
+    backdrop-filter: blur(10px);
+}
+.content{
+    position: absolute;
+    width:100%;
+    height:400rpx;
+    left:0;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 40rpx;
+    color:#fff
+}
+.title{
+    letter-spacing:10rpx;
+    font-weight: bolder;
+    font-size: 45rpx;
+}
+.place{
+    letter-spacing: 5rpx;
+    font-size: 35rpx;
+}
+.count text{
+    margin-right: 30rpx;
+    font-size: 30rpx;
+}
+.count text:nth-child(2n+1){
+    color:#F11146
+}
+.count text:nth-child(2n+2){
+    color:#646061
+}
+.img{
+    width:180rpx;
+    height:240rpx;
+    position: absolute;
+    right:30rpx;
+    top:280rpx
+}
+.name{
+    padding:40rpx;
+    font-size: 35rpx;
+    border-bottom: 1px solid rgb(197, 196, 196);
+}
+.name view{
+    margin-top: 15rpx;
+    font-size: 40rpx;
+}
+.name .name-title{
+    margin-bottom: 30rpx;
+    color:#666666;
+    font-weight: bolder;
+}
+.name view text:first-child{
+    color:#A9A9A9;
+    margin-right: 30rpx;
+}
+.name view text:last-child{
+    color:#666666
+}
+.name view .casts{
+    color:#666666
+}
+.container .name view .score{
+    color:#1F3463
+}
+.info{
+    padding:40rpx;
+    border-bottom: 1px solid rgb(197, 196, 196);
+}
+.info view:first-child{
+    color:#A9A9A9;
+    margin-bottom: 30rpx;
+}
+.info view:last-child{
+    color:#666
+}
+.at{
+    padding:40rpx;
+}
+.at>view:first-child{
+    color:#A9A9A9;
+    margin-bottom: 30rpx;
+}
+.scroll{
+    white-space: nowrap;
+}
+.scroll view{
+    display: inline-block;
+}
+.item{
+    width:200rpx;
+    height:270rpx;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40rpx;
+}
+.star image{
+    width:35rpx;
+    height:35rpx
+}

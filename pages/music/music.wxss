@@ -1,0 +1,6 @@
+.slot-icon{
+    width:36rpx;
+    height: 36rpx;
+    vertical-align: bottom;
+    margin-right: 10rpx;
+  }

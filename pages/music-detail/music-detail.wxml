@@ -1,0 +1,13 @@
+<image src="{{coverImgUrl}}" class="coverImage"></image>
+<view class="list">播放列表</view>
+<view class="item" wx:for="{{playlist}}" wx:key="{{item.id}}" bindtap="togglePlay"
+ data-poster = "{{item.coverImage}}"
+ data-name = "{{item.name}}"
+ data-id="{{item.id}}">
+    <view class="cover-image">
+        <image src="{{item.coverImage}}" class="icon">
+        </image>
+        <text>{{item.name}}</text>
+    </view>
+    <image src="{{isPlay &&playId == item.id?'/images/icons/play.png':'/images/icons/pause.png'}}" class="play-icon"></image>
+</view>

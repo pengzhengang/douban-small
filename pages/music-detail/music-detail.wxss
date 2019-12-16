@@ -1,0 +1,34 @@
+.coverImage{
+    width:100%;
+    vertical-align: bottom;
+}
+.item image{
+    width:100rpx;
+    height: 100rpx;
+}
+.item{
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    justify-content: space-between;
+}
+.item .play-icon{
+    width:50rpx;
+    height:50rpx;
+}
+.cover-image{
+    display: flex;
+    align-items: center;
+}
+.cover-image text{
+    margin-left: 50rpx;
+}
+.list{
+    padding-left: 40rpx;
+    background: #eee;
+    line-height: 80rpx;
+    font-size: 35rpx;
+}
+
+/* pages/music-detail/music-detail.wxss */

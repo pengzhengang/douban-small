@@ -1,0 +1,32 @@
+/* pages/read-detail/read-detail.wxss */
+.collection,.share{
+    width:100rpx;
+    height: 100rpx;
+}
+.bg{
+    width:100%;
+    height: 400rpx;
+}
+.music{
+    width:80rpx;
+    height: 80rpx;
+    position: absolute;
+    top:200rpx;
+    left:50%;
+    transform: translateX(-50%);
+}
+.detail{
+    height: 70rpx;
+    display: flex;
+    align-items: center;
+}
+.detail image{
+    width:60rpx;
+    height: 60rpx;
+}
+.collect-share{
+    float: right;
+}
+.share{
+    margin-left: 30rpx;
+}

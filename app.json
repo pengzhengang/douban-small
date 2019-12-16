@@ -1,0 +1,54 @@
+{
+    "pages": [
+      "pages/index/index",
+      "pages/read/read",
+      "pages/movie/movie",
+      "pages/read-detail/read-detail",
+      "pages/movie-detail/movie-detail",
+      "pages/detail/detail",
+      "pages/my/my",
+      "pages/music/music",
+      "pages/music-detail/music-detail",
+      "pages/music-play/music-play"
+    ],
+    "requiredBackgroundModes": ["audio", "location"],
+    "window": {
+      "navigationBarBackgroundColor": "#405F80",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "",
+      "backgroundColor": "#ffffff",
+      "backgroundTextStyle": "dark",
+      "enablePullDownRefresh": false
+    },"tabBar": {
+      "color": "#666",
+      "selectedColor": "#3785F9",
+      "position": "bottom",
+      "borderStyle": "black",
+      "list": [
+        {
+          "pagePath": "pages/read/read",
+          "text": "阅读",
+          "iconPath": "/images/tabs/yuedu.png",
+          "selectedIconPath": "/images/tabs/yuedu_hl.png"
+        },
+        {
+          "pagePath": "pages/movie/movie",
+          "text": "电影",
+          "iconPath": "/images/tabs/dianying.png",
+          "selectedIconPath": "/images/tabs/dianying_hl.png"
+        },
+        {
+          "pagePath": "pages/my/my",
+          "text": "我的",
+          "iconPath": "/images/tabs/my.png",
+          "selectedIconPath": "/images/tabs/my-sl.png"
+        },{
+          "pagePath": "pages/music/music",
+          "text": "音乐",
+          "iconPath": "/images/tabs/music.png",
+          "selectedIconPath": "/images/tabs/music-sl.png"
+        }
+      ]
+    },
+    "sitemapLocation": "sitemap.json"
+  }

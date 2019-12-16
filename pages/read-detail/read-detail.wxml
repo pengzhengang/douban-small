@@ -1,0 +1,17 @@
+<image class="bg" src="{{item.imgSrc}}">
+
+</image>
+<image class="music" 
+bind:tap="handleMusic"
+src=" {{isPlay?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
+<view class="detail">
+    <image src="{{item.avatar}}"></image>
+    <view>知乎 发表于:<text></text>{{item.dateTime}}</view>
+</view>
+<view>{{item.title}}</view>
+<view class="collect-share">
+    <image 
+    bind:tap="handleCollect"
+    class="collection" src="{{isCollected?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}"></image>
+    <image class="share" bind:tap="share" src="/images/icon/share-anti.png"></image>
+</view>

@@ -1,0 +1,22 @@
+function formatStar(value) {
+    if (value) {
+        var value = value.substring(0, 1);
+
+        /* 3.5 
+        3 [1,1,1,,0,0]
+         */
+        var arr = []
+        for (var i = 1; i <= 5; i++) {
+            if (i <= value) {
+                arr.push(1)
+            } else {
+                arr.push(0)
+            }
+        }
+        return arr;
+    }
+
+}
+module.exports = {
+    formatStar: formatStar
+}

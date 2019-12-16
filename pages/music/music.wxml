@@ -1,0 +1,9 @@
+<v-item title="热门歌曲" data="{{hotSongs}}">
+    <image class="slot-icon" slot="icon" src="/images/icons/recmd@2x.png"></image>
+  </v-item>
+  <v-item title="最新音乐" data="{{newSongs}}">
+    <image class="slot-icon" slot="icon" src="/images/icons/newest@2x.png"></image>
+  </v-item>
+  <v-item title="主播电台" data="{{djSongs}}">
+    <image class="slot-icon" slot="icon" src="/images/icons/radio@2x.png"></image>
+  </v-item>

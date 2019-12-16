@@ -1,0 +1,27 @@
+/* components/movie-item/movie-item.wxss */
+.img{
+    width:200rpx;
+    height: 280rpx;
+}
+.star{
+    width:30rpx;
+    height: 30rpx;
+}
+.item{
+    margin-top: 20rpx;
+    width:200rpx;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 26rpx;
+    line-height: 50rpx;
+}
+.rating{
+    font-size: 24rpx;
+    color:#C20C0C
+}
+.btm{
+    display: flex;
+    align-items: center;
+}

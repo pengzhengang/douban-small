@@ -1,0 +1,20 @@
+<view class="nav">
+    <view>
+        <slot name="icon"></slot><text>{{title}}</text>
+    </view>
+    <view>更多></view>
+</view>
+<view class="container">
+    <block wx:for="{{data}}"  wx:key="{{item.id}}">
+        <view class="item" bind:tap="handleItem" data-id="{{item.id}}">
+            <view class="cover">
+                <view class="play-count">
+                    <image src="/images/p0.png"></image>{{item.playCount}}
+                </view>
+                <image src="{{item.coverImgUrl}}"></image>
+            </view>
+            <text>{{item.name}}</text>
+        </view>
+    </block>
+
+</view>

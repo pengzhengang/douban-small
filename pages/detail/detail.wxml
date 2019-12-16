@@ -1,0 +1,45 @@
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="container">
+    <div class="bg">
+        <image src="{{subject.images.small}}"></image>
+    </div>
+    <view class="blur"></view>
+    <view class="content">
+        <view class="title">{{subject.title}}</view>
+        <view class="place">{{subject.countries[0]}} · {{subject.year}}</view>
+        <view class="count">
+            <text>{{subject.collect_count}}</text><text>人喜欢</text>
+            <text>{{subject.ratings_count}}</text><text>条评论</text>
+        </view>
+    </view>
+    <image class="img" src="{{subject.images.small}}" data-url="{{subject.images.small}}" bind:tap="handleImage"></image>
+
+    <view class="name">
+        <view class="name-title">{{subject.original_title}}</view>
+        <view class="mark">
+            <text>评分</text>
+            <view class="star">
+                <image wx:for="{{tools.formatStar(subject.rating.stars)}}" wx:key
+                    src="{{item==1?'/images/icon/star.png':'/images/icon/none-star.png'}}"></image>
+                <text>{{subject.rating.average}}</text>
+            </view>
+        </view>
+        <view><text>导演</text><text>{{subject.directors[0].name}}</text></view>
+        <view><text>影人</text><text class="casts" wx:for="{{subject.casts}}" wx:key>{{tools.format(item.name)}} </text>
+        </view>
+        <view><text>类型</text><text class="casts" wx:for="{{subject.genres}}" wx:key>{{item}} </text></view>
+    </view>
+    <view class="info">
+        <view>剧情简介</view>
+        <view>{{subject.summary}}</view>
+    </view>
+    <view class="at">
+        <view>影人</view>
+        <scroll-view scroll-x="true" class="scroll">
+            <view wx:for="{{subject.casts}}" wx:key>
+                <image src="{{item.avatars.small}}" data-url="{{item.avatars.small}}" bind:tap="handleImage" class="item"></image>
+                <view>{{tools.format(item.name)}}</view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

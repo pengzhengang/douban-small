@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-movie":"/components/movie-item/movie-item"
+  }
+}
